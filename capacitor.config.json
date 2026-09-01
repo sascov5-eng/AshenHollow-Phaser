@@ -1,0 +1,8 @@
+{
+  "appId": "com.ashenhollow.android",
+  "appName": "Ashen Hollow",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

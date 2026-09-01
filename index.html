@@ -1,11 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Ashen Hollow</title>
-<script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#070a10">
+  <title>Ashen Hollow</title>
+  <style>
+    html, body, #game-root { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #070a10; }
+    body { touch-action: none; overscroll-behavior: none; }
+    canvas { display: block; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
 </head>
 <body>
-<script src="src/game.js"></script>
+  <div id="game-root"></div>
+  <script type="module" src="src/game.js"></script>
 </body>
 </html>
