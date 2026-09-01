@@ -8,8 +8,9 @@ export class PlayerController {
     this.motor = new PlayerMotor();
     this.attack = new AttackController();
 
-    this.sprite = scene.physics.add.rectangle(x, y, MOVEMENT.colliderWidth, MOVEMENT.colliderHeight, 0xe8eef7, 1);
+    this.sprite = scene.add.rectangle(x, y, MOVEMENT.colliderWidth, MOVEMENT.colliderHeight, 0xe8eef7, 1);
     this.sprite.setStrokeStyle(2, 0x59677a, 1);
+    scene.physics.add.existing(this.sprite);
     this.sprite.body.setAllowGravity(false);
     this.sprite.body.setCollideWorldBounds(true);
     this.sprite.body.setSize(MOVEMENT.colliderWidth, MOVEMENT.colliderHeight, true);
